@@ -15,7 +15,7 @@ Include gamelet.js in a HTML document containing an element with an id of "ball"
 <script src="gamelet.js">
 ```
 
-The script will respond when you press certain keyboard keys (W, A, S, D) by moving the ball element in a direction.
+The script detect certain key presses (W, A, S, D) and it move the ball element in a direction accordingly.
 
 - W -> Up
 - S -> Down

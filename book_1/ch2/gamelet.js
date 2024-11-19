@@ -5,18 +5,24 @@ let step = 30
 let positionX = 0
 let positionY = 0
 
+// responds to certain key presses by updating position.
 /**
  * @param {KeyboardEvent} ev
  */
 function handleKeyPress(ev) {
-  if (ev.key === "w") {
-    positionY -= step
-  } else if (ev.key === "s") {
-    positionY += step
-  } else if (ev.key === "a") {
-    positionX -= step
-  } else if (ev.key === "d") {
-    positionX += step
+  switch (ev.key) {
+    case "w":
+      positionY -= step
+      break
+    case "s":
+      positionY += step;
+      break
+    case "a":
+      positionX -= step
+      break
+    case "d":
+      positionX += step
+      break
   }
 
   if (positionX < 0) {
